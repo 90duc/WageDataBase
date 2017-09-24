@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DataBase.jnlp">
+  <information>
+    <title>DataBase</title>
+    <vendor>MK</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DataBase.jar" size="919722" download="eager" />
+    <jar href="lib/antlr-2.7.7.jar" size="445288" download="eager" />
+    <jar href="lib/classmate-1.3.0.jar" size="64110" download="eager" />
+    <jar href="lib/dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib/geronimo-jta_1.1_spec-1.1.1.jar" size="16030" download="eager" />
+    <jar href="lib/hibernate-commons-annotations-5.0.1.Final.jar" size="75288" download="eager" />
+    <jar href="lib/hibernate-core-5.2.7.Final.jar" size="6557933" download="eager" />
+    <jar href="lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" size="113371" download="eager" />
+    <jar href="lib/jandex-2.0.3.Final.jar" size="186741" download="eager" />
+    <jar href="lib/javassist-3.20.0-GA.jar" size="750581" download="eager" />
+    <jar href="lib/jboss-logging-3.3.0.Final.jar" size="66802" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DataBase" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cn.database.ui.DataBase"  name="DataBase" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,175 @@
+.root {
+   -fx-focus-color:gray; 
+}
+
+.top{  
+    -fx-min-height: 320px;
+    -fx-max-height: 380px;
+    -fx-background-color: #0f0e61;
+    -fx-padding:0px 180px 0px 180px;
+}
+.web_wiew{
+    -fx-border:none;
+    
+}
+.web-view .form-select-button {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+}
+.login_hbox{
+    -fx-max-width:200px;
+    /*-fx-spacing: 10px;*/
+     -fx-padding: 0px 0px 20px 30px;
+    
+}
+.login_hbox>.login_label{
+    -fx-text-fill: white;   
+    /*-fx-text-alignment: left;*/
+     /*-fx-alignment: CENTER_LEFT;*/
+    -fx-font-size:18px;
+   
+}
+.login_hbox >.button{
+    -fx-min-width:20px;
+    -fx-background-color: transparent;
+    -fx-text-fill: brown;
+    -fx-font-size:16px;  
+    -fx-cursor: hand;
+}
+.login_hbox>.button:hover{
+    -fx-background-color: #2d3833;
+}
+
+.left{
+   
+    -fx-background-color: transparent; 
+}
+
+/**************  左框   **********/
+.scrol_left{
+    -fx-min-width:250px;
+    -fx-pref-width:450px; 
+    -fx-pref-height:2000;
+    -fx-background-color: #1d2833; 
+}
+.scroll-pane > .viewport {  
+    -fx-background-color: transparent; 
+   
+} 
+
+.menulabel{
+    -fx-background-color:#1d2833;
+    -fx-pref-width:1000;
+    -fx-min-height:80px; 
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-blend-mode:multiply;
+    -fx-padding: 0px 0px 0px 80px;
+}
+
+.titled-pane > .title{
+    -fx-background-color:#203039;   
+    -fx-background-radius: 0;
+    -fx-padding:20px 10px 20px 20px;
+    -fx-border-color: #2d3833;
+    -fx-effect: innershadow(three-pass-box,#4d4843,5,0.4,0,0);
+}
+.titled-pane > .title > .arrow-button > .arrow {  
+    -fx-background-color: white;      
+}  
+.titled-pane{
+     -fx-text-fill: white;    
+     -fx-font-size:16px;
+     /*-fx-opacity:0.8;*/     
+}
+.titled-pane > *.content { 
+  -fx-border-insets: 0; 
+  -fx-border-color: #2d3833;
+}
+.choice_button{
+    -fx-pref-width:2000px;
+    -fx-min-height:40px;
+    -fx-text-fill: white;
+    -fx-background-color:#233233; 
+    -fx-border-color: #2d3833;
+    -fx-padding: 0px 0px 0px 80px;
+}
+.foused_title_pane> .title{
+    -fx-background-color:#2d3833;
+}
+
+.fouse_button{
+    -fx-opacity:0.8;  
+}
+.no_padding{   
+    /*-fx-background-color:#2d3833;*/ 
+    -fx-padding: 0px;
+}
+
+/*********   右框  *********/
+
+.right{
+    -fx-pref-width:2000px;
+    -fx-padding: 10px 20px 15px 20px;
+    -fx-background-color: #8c520cad;
+}
+.right >.label{
+    -fx-pref-width:2000px;
+    /*-fx-min-height:60px;*/
+    -fx-text-alignment: left;
+    -fx-alignment: center-left;
+    -fx-font-size:16px;
+    -fx-padding: 5px 0px 12px 30px;
+ 
+}
+.separator:horizontal .line {  
+    -fx-border-color: #7c220c5d;  
+    -fx-border-insets: 0px 0px 10px 0px;
+}
+
+/****** 内容框**********/
+.table-view{
+    -fx-pref-width:2000px;
+    -fx-pref-height:2000px;
+ 
+}
+.white_back{
+    -fx-background-radius: 3px;
+    -fx-background-color:#cfdfbf;
+    -fx-pref-height:2000px;
+    -fx-padding:20px 0px 0px 0px;
+}
+.white_back >.label,.no_data  >.label{
+    -fx-pref-width:2000px;
+    /*-fx-min-height:60px;*/
+    -fx-text-alignment: left;
+    -fx-alignment: center-left;
+    -fx-font-size:20px;
+    -fx-padding: 15px 0px 10px 60px;
+    /*-fx-text-fill:ghostwhite;*/
+ 
+}
+.no_data {
+    -fx-background-radius: 3px;
+    -fx-background-color:#3aad7585;
+    -fx-pref-height:2000px;
+    -fx-padding:20px 0px 0px 0px;
+}
+
+.date_hbox{
+    -fx-padding: 0px 0px 10px 0px;
+}
+.date_hbox > .label{
+    -fx-padding: 3px 0px 0px 10px;
+    -fx-font-size:14px;
+}
+
+.operate_bar{
+   -fx-padding: 0px 20px 10px 0px; 
+   -fx-alignment: center-right;
+}
+.operate_bar> .button{
+    -fx-pref-width:80px;
+    -fx-pref-height:26px;
+}
+

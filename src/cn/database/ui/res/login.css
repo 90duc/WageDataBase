@@ -1,0 +1,24 @@
+.grid-pane{
+   -fx-vgap: 20px;
+   -fx-hgap: 40px;
+   -fx-alignment: center;
+}
+
+.login_buttton{
+    -fx-alignment: center-right;
+    -fx-padding: 40px 200px 0px 0px;
+    -fx-spacing: 40px;
+}
+.frame{
+     -fx-background-image: url('/cn/database/ui/res/v.png');
+     -fx-padding: 260px 30px 0px 20px;
+}
+.login_buttton>.button{
+    -fx-background-color: #3a793882;
+    -fx-border-color: #1d2833;
+    -fx-border-radius: 3px;
+}
+.login_buttton>.button:focused{
+    -fx-background-color: #7c220c5d;
+   
+}

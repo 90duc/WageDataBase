@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-23 22:28:33 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cn.database.bean.impl.Attendance" table="attendance" catalog="wagemanager">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <many-to-one name="employee" class="cn.database.bean.impl.Employee" fetch="select">
+            <column name="employeeID" />
+        </many-to-one>
+        <property name="month" type="java.lang.String">
+            <column name="month">
+                <comment>??&#161;&#164;?</comment>
+            </column>
+        </property>
+        <property name="late" type="java.lang.Integer">
+            <column name="late">
+                <comment>????????</comment>
+            </column>
+        </property>
+        <property name="absence" type="java.lang.Integer">
+            <column name="absence">
+                <comment>?&#161;&#192;??????</comment>
+            </column>
+        </property>
+        <property name="sign" type="java.lang.Integer">
+            <column name="sign">
+                <comment>????????</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

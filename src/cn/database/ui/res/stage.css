@@ -1,0 +1,21 @@
+.bottom{
+    -fx-alignment: center-right;
+    -fx-spacing: 30px;
+    -fx-padding: 10px 30px 20px 0px;
+}
+.bottom >.button{
+    -fx-pref-width:60px;
+    -fx-pref-height:25px;
+}
+.stage_frame{
+    -fx-background-color:#3a793882;
+    -fx-padding: 10px;
+    -fx-min-width:450px;
+    -fx-min-height:300px;
+}
+.grid-pane{
+   -fx-vgap: 10px;
+   -fx-hgap: 20px;
+   -fx-padding: 10px 20px 10px 50px;
+}
+

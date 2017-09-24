@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-23 22:28:33 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cn.database.bean.impl.Department" table="department" catalog="wagemanager">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="name" type="string">
+            <column name="name">
+                <comment>??????</comment>
+            </column>
+        </property>
+        <set name="employees" table="employee" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="departNo">
+                    <comment>??????</comment>
+                </column>
+            </key>
+            <one-to-many class="cn.database.bean.impl.Employee" />
+        </set>
+    </class>
+</hibernate-mapping>

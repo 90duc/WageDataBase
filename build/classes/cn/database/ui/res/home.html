@@ -1,0 +1,112 @@
+<html >
+<head >
+    <title>s</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+<style>
+html ,body{
+  margin: 0px;
+  padding: 0px;
+}
+.image_frame{
+   width:100%;
+   height:100%;
+  
+}
+.image_frame img{
+   width:100%;
+   height:100%;
+   
+}
+.circle{
+  display:inline-block;
+   background-color:gray;
+   border-radius:9px;
+   width:15px;
+   height:15px;
+   margin:8px;
+   cursor:pointer;
+}
+
+.current{
+    background-color:white;
+}
+.float_right{
+  position:absolute;
+  bottom: 3%;
+  right:10%;
+  
+}
+#user{
+  display:inline-block;
+  position:absolute;
+  bottom:5%;
+  left:5%;
+  font-size:20px;
+  color:white;
+}
+#user>button{
+  background-color: transparent;
+  font-size:18px;
+  color: brown;
+  border:none;
+}
+#user>button:hover{
+    background-color: #2d3833;
+}
+</style>
+</head>
+<body>
+<div class="image_frame">
+<img id="image_content"/>
+<div id="images_index" class="float_right">
+</div>
+</div>
+    <div id="user"><span id="user_name"></span>&nbsp;|&nbsp;<button onclick="app.loginOut();">退出</button></div>
+
+
+<script>
+ var user =document.getElementById("user_name");
+  user.innerText=app.getUserName();  
+ var images=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+ var index_content =document.getElementById("images_index");
+ 
+ for (var x in images)
+ {
+   var ndiv = document.createElement('div');
+   ndiv.id="index_"+x;
+   ndiv.className ="circle";
+   ndiv.setAttribute("data-value",x);
+   ndiv.onclick = function (e) {
+           point_click(parseInt(e.srcElement.getAttribute("data-value"))) ;
+   }
+   index_content.appendChild(ndiv);
+ }
+ var image_content =document.getElementById("image_content");
+ var  cName="current";
+ 
+ var  index=0;
+ image_content.src=images[index];
+ var co =document.getElementById("index_"+index);
+ co.className +=" "+cName;
+ function move(){   
+	co.className = co.className.replace( new RegExp( "(\\s|^)" + cName + "(\\s|$)" )," " );
+    index=(index+1)%images.length;
+	image_content.src=images[index];
+	co =document.getElementById("index_"+index);
+	co.className +=" "+cName;
+	
+ }
+ var timer = window.setInterval(move,2000); 
+  function point_click(nindex){ 
+    window.clearInterval(timer);  
+	co.className = co.className.replace( new RegExp( "(\\s|^)" + cName + "(\\s|$)" )," " );
+    index=nindex;
+	image_content.src=images[index];
+	co =document.getElementById("index_"+index);
+	co.className +=" "+cName;
+	timer = window.setInterval(move,2000); 
+ }
+
+</script>
+</body>
+</html>

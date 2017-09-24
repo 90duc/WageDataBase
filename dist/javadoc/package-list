@@ -1,0 +1,13 @@
+cn.database.bean.get
+cn.database.bean.impl
+cn.database.bean.interf
+cn.database.bean.other
+cn.database.bean.set
+cn.database.core
+cn.database.dao
+cn.database.dao.impl
+cn.database.ui
+cn.database.ui.choice
+cn.database.ui.operation
+cn.database.ui.res
+cn.database.util
